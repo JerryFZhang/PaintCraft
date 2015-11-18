@@ -1,4 +1,5 @@
-package mod.mcreator;import net.minecraftforge.fml.client.*;
+package mod.mcreator;
+import net.minecraftforge.fml.client.*;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -90,16 +91,16 @@ import net.minecraft.init.*;
 import java.util.Random;
 
 import net.minecraft.client.resources.model.*;
-public class mcreator_mnmnmnmn {
+public class paintCraft {
 
-	public mcreator_mnmnmnmn(){
+	public paintCraft(){
 		
 	}
 
 	public static Item block;public static Object instance;public void load(FMLInitializationEvent event){
 			
 		if(event.getSide() == Side.CLIENT)
-			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("wdddd:Mnmnmnmn", "inventory"));
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("wdddd:pic", "inventory"));
 		GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
 			"X1X", "X4X", "X7X", Character.valueOf('1'), new ItemStack(Blocks.redstone_torch, 1), Character.valueOf('4'), new ItemStack(Blocks.red_mushroom, 1), Character.valueOf('7'), new ItemStack(Items.bowl, 1), 
 		});
@@ -136,8 +137,8 @@ public class mcreator_mnmnmnmn {
 		
 		public BlockCustomFood(int par2, float par3, boolean par4){
 		super(par2, par3, par4);
-		setUnlocalizedName("Mnmnmnmn");
-		GameRegistry.registerItem(this, "Mnmnmnmn");
+		setUnlocalizedName("pic");
+		GameRegistry.registerItem(this, "pic");
 	}
 
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity){
