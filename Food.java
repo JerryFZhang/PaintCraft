@@ -36,43 +36,45 @@ import net.minecraft.client.resources.model.*;
 public class paintCraft {
 
 	public paintCraft(){
-		
+
 	}
 
-	public static Item block;public static Object instance;public void load(FMLInitializationEvent event){
-			
+	public static Item block;
+	public static Object instance;
+	public void load(FMLInitializationEvent event){
+
 		if(event.getSide() == Side.CLIENT)
 			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("wdddd:pic", "inventory"));
 		GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
 				//How to craft the item(Making a recipe)
-				"X1X", "X4X", "X7X", 
-				Character.valueOf('1'), 
-				new ItemStack(Blocks.redstone_torch, 1), 
-				Character.valueOf('4'), 
-				new ItemStack(Blocks.red_mushroom, 1), 
-				Character.valueOf('7'), 
-				new ItemStack(Items.bowl, 1), 
+				"X1X", "X4X", "X7X",
+				Character.valueOf('1'),
+				new ItemStack(Blocks.redstone_torch, 1),
+				Character.valueOf('4'),
+				new ItemStack(Blocks.red_mushroom, 1),
+				Character.valueOf('7'),
+				new ItemStack(Items.bowl, 1),
 		});
 		GameRegistry.addSmelting(Blocks.redstone_torch, new ItemStack(block), 1.0f);
 	}
 	public void generateNether(World world, Random random, int chunkX, int chunkZ){
 			//This method id used to customize nether.
 	}
-			
+
 	public void generateSurface(World world, Random random, int chunkX, int chunkZ){
-			
+
 	}
 	public int addFuel(ItemStack fuel){
 		return 0;
 	}
 	public void serverLoad(FMLServerStartingEvent event){
-				
+
 	}
 	public void preInit(FMLPreInitializationEvent event){
-					
+
 	}
 	public void registerRenderers(){
-						
+
 	}
 
 
@@ -83,7 +85,7 @@ public class paintCraft {
 	}
 
 	public static class BlockCustomFood extends ItemFood{
-		
+
 		public BlockCustomFood(int par2, float par3, boolean par4){
 		super(par2, par3, par4);
 		setUnlocalizedName("pic");
@@ -91,7 +93,7 @@ public class paintCraft {
 	}
 
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity){
-		
+
 		super.onFoodEaten(itemStack, world, entity);
 		float var4 = 1.0F;
 		int i = (int)(entity.prevPosX + (entity.posX - entity.prevPosX) * (double)var4);
