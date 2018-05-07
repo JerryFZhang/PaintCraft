@@ -1,4 +1,4 @@
-# paintcraft_mod
+# PaintCraft
 Inspired by Mcreator.
 
 This a simple Minecraft mod written in Java for really limited in terms of functionalities,categories of items and complixity.
@@ -9,7 +9,7 @@ Visit [this repo](https://github.com/vpetkar/paintcraft), to get more informatio
 - Minecraft Forge
 
 #Author 
-Jerry Fengwei Zhang(zhang96), codingjerry@gmail.com.
+Jerry Fengwei Zhang(zhang96)
 
 #How to use
 Start the game, run the Java file.
