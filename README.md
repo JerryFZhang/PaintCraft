@@ -8,11 +8,11 @@ Visit [this repo](https://github.com/vpetkar/paintcraft), to get more informatio
 - Mineraft 1.8
 - Minecraft Forge
 
-#Author 
+# Author 
 Jerry Fengwei Zhang(zhang96)
 
-#How to use
+# How to use
 Start the game, run the Java file.
 
-#License
+# License
 This mod is free of use and the source code is opened to the public, following rules under MIT license
